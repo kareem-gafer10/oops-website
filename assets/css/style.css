@@ -1,0 +1,688 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo&display=swap");
+body {
+  font-family: "Cairo", sans-serif;
+}
+:root {
+  --first-color: rgb(198, 66, 89);
+  --second-color: rgb(255, 138, 92);
+  --text-white: #fff;
+}
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+a:hover {
+  color: inherit;
+}
+ul {
+  list-style: none;
+}
+label {
+  color: var(--second-color) !important;
+  font-size: 1.2rem;
+}
+input:focus,
+select:focus,
+button,
+textarea {
+  outline: none !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+.sub-head {
+  color: var(--first-color);
+  border-right: 4px solid var(--second-color);
+}
+/* start Header */
+header {
+  background-image: url(../images/bg@2x.png);
+  background-position: center;
+  height: 90vh;
+  background-size: cover;
+}
+header .advertising i {
+  color: var(--text-white);
+  font-size: 1.6rem;
+}
+header a:last-child {
+  background-color: var(--text-white);
+  border-radius: 20px;
+  color: #c94559;
+  padding: 1px 25px;
+}
+header .logo {
+  width: 300px;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+header .logo-text img {
+  width: 90%;
+}
+header .logo-img img {
+  width: 15%;
+  position: absolute;
+  top: 74%;
+  right: 33.5%;
+}
+header form {
+  background: linear-gradient(to right, rgb(198, 66, 89), rgb(255, 138, 92));
+  position: absolute;
+  top: 80vh;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 10px 10px 0.9rem 0.1rem rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  right: 50%;
+  transform: translateX(50%);
+}
+form button,
+form .form-group input,
+form .form-group select {
+  border-radius: 20px;
+  padding: 10px 50px;
+}
+form .form-group {
+  border-radius: 20px;
+  padding: 10px;
+  flex-grow: 1;
+}
+
+form .form-group > i {
+  position: absolute;
+  top: 0;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.8rem;
+  color: rgb(198, 66, 89);
+}
+
+@media (max-width: 992px) {
+  form {
+    flex-direction: column;
+  }
+}
+
+/* end Header */
+
+/* start Nav */
+.navbar-icon {
+  width: 80%;
+}
+.navbar-icon .nav-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90px;
+  height: 90px;
+  margin: auto;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  font-size: 2rem;
+}
+.navbar-icon .nav-img a {
+  color: var(--text-white);
+}
+.nav-icon:first-child .nav-img,
+.nav-icon:nth-child(5) .nav-img {
+  background: linear-gradient(
+    to bottom,
+    var(--first-color),
+    var(--second-color)
+  );
+}
+.nav-icon:nth-child(2) .nav-img,
+.nav-icon:nth-child(6) .nav-img {
+  background: linear-gradient(to bottom, var(--first-color), rgb(68, 68, 68));
+}
+.nav-icon:nth-child(3) .nav-img {
+  background: linear-gradient(to bottom, var(--second-color), rgb(68, 68, 68));
+}
+.nav-icon:nth-child(4) .nav-img {
+  background: linear-gradient(to bottom, rgb(14, 195, 215), rgb(30, 131, 140));
+}
+.nav-icon .dropdown .btn {
+  background: rgb(68, 68, 68);
+  color: var(--text-white);
+  font-size: 0.6rem;
+  padding: 5px 7px;
+  border-radius: 20px;
+  text-align-last: center;
+  width: 100%;
+}
+
+@media (max-width: 992px) {
+  .nav-content {
+    margin-top: 150px !important;
+  }
+}
+
+/* end Nav */
+
+/* start advertisement */
+.advertisement h3 {
+  color: var(--first-color);
+  border-right: 4px solid var(--second-color);
+  padding: 1px 10px;
+}
+.advertisement .card {
+  background: #f5f5f5;
+  border-radius: 20px;
+  box-shadow: 1px 1px 0.2rem 0.1rem rgba(0, 0, 0, 0.1);
+}
+.advertisement .card-title {
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.advertisement .card-info {
+  font-size: 1.2rem;
+}
+.advertisement .card-info i {
+  color: var(--first-color);
+}
+.advertisement .btn-more a {
+  padding: 5px 6%;
+  background: linear-gradient(
+    to bottom,
+    var(--first-color),
+    var(--second-color)
+  );
+  color: var(--text-white);
+  border-radius: 32px;
+  font-size: 1.3rem;
+}
+/* end advertisement */
+
+/* start share */
+.share {
+  background: var(--second-color);
+}
+.share h3 {
+  color: #fff;
+  font-weight: 600;
+}
+.share form input {
+  border-radius: 27px;
+  background: var(--text-white);
+  font-size: 1.2rem;
+  padding: 20px;
+  font-weight: 600;
+}
+
+.share form button {
+  color: var(--second-color);
+  padding: 10px 70px;
+}
+@media (max-width: 768px) {
+  .share form {
+    width: 100% !important;
+  }
+}
+/* end share */
+
+/* start Footer */
+footer {
+  background: var(--first-color);
+  color: var(--text-white);
+  padding-bottom: 3rem;
+}
+footer .logo {
+  position: relative;
+  width: 160px;
+  margin: auto;
+}
+footer .logo-img {
+  position: absolute;
+  width: 15%;
+  top: 74%;
+  right: 32.5%;
+}
+footer p {
+  padding-top: 25px;
+  font-size: 0.8rem;
+}
+footer .nav-link {
+  color: var(--text-white);
+  font-weight: 600;
+  font-size: 0.8rem;
+  padding: 3px 0;
+}
+footer .nav-link:hover {
+  color: var(--text-white);
+}
+footer i {
+  font-size: 1.7rem;
+  color: var(--text-white);
+}
+footer h6 {
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+footer .down-app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer .down-app a {
+  background: var(--text-white);
+  color: var(--first-color);
+  display: inline-flex;
+  width: 185px;
+  margin-bottom: 10px;
+  padding: 7px;
+  border-radius: 32px;
+}
+footer .down-app a i {
+  font-size: 1.8rem;
+  color: var(--second-color);
+}
+
+@media (max-width: 768px) {
+  footer .logo {
+    margin: unset;
+  }
+  footer ul {
+    padding: 0;
+  }
+  footer .down-app {
+    align-items: end;
+  }
+}
+/* end Footer */
+
+/*********************login page**********************/
+.header-small {
+  height: 30vh;
+}
+.header-small .logo {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.login {
+  background-color: #f5f5f5;
+}
+.login .card-login {
+  background: var(--text-white);
+  border-radius: 0 20px 20px 0;
+  box-shadow: 1px 1px 0.5rem 0.1rem rgba(0, 0, 0, 0.1);
+  height: 500px;
+}
+.login form {
+  width: 90%;
+  margin: auto;
+}
+.login form i {
+  position: absolute;
+  right: 2rem;
+  font-size: 2rem;
+  color: var(--text-white);
+}
+.login form .form-control {
+  padding: 30px 60px;
+  border-radius: 32px;
+  font-size: 1.5rem;
+  background: var(--first-color);
+}
+.login form .form-control::placeholder {
+  color: #f2ccd3;
+}
+.login form a {
+  color: var(--first-color);
+}
+.login form .btn-send button {
+  border-radius: 32px;
+  width: 250px;
+  font-size: 1.2rem;
+  color: var(--text-white);
+  background-color: var(--first-color);
+  padding: 10px 0;
+  box-shadow: 1px 5px 0.6rem 0.2rem rgba(0, 0, 0, 0.1);
+}
+.login .img-lock {
+  height: 500px;
+}
+.login .login-img {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(
+    to bottom,
+    var(--first-color),
+    var(--second-color)
+  );
+}
+.login .login-img img {
+  width: 70%;
+}
+
+@media (max-width: 768px) {
+  .login .login-img {
+    display: none;
+  }
+}
+/*********************login page**********************/
+
+/*********************register page**********************/
+.warning-form p {
+  font-size: 0.8rem;
+  color: var(--first-color);
+  margin-right: 30px;
+}
+.warning-form:before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: var(--second-color);
+}
+/*********************register page**********************/
+
+/*********************car page**********************/
+.form-car {
+  padding-bottom: 80px;
+  background: linear-gradient(to top, var(--first-color), var(--second-color));
+}
+
+.form-car .row {
+  width: 90%;
+  margin: auto;
+}
+.form-car input,
+.form-car select {
+  padding: 10px !important;
+}
+form .form-group {
+  border-radius: 20px;
+  padding: 10px;
+  flex-grow: 1;
+}
+.cars-page {
+  background-color: #f5f5f5;
+}
+.cars-m {
+  margin-top: 30vh !important;
+}
+.pagination {
+  padding: 70px 0;
+}
+.pagination .page-item a {
+  padding: 0.5rem 1.2rem;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  border-radius: 0.5rem !important;
+  color: var(--text-white);
+  background: var(--first-color);
+}
+@media (max-width: 768px) {
+  .cars-m {
+    margin-top: 70vh !important;
+  }
+}
+/*********************car page**********************/
+
+/*********************car details page**********************/
+.car-details {
+  background: #f5f5f5;
+}
+.car-details h2 {
+  font-weight: 700;
+}
+.car-details h5 {
+  color: var(--second-color);
+  font-weight: 600;
+}
+.car-details .image img {
+  width: 100%;
+}
+.car-details .image:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  top: 0;
+  right: 0;
+  border-radius: 5% 5% 0 0;
+}
+.car-details .image i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #f5f5f5;
+  font-size: 3.5rem;
+  z-index: 2;
+  cursor: pointer;
+}
+.car-details .add-favour h5,
+.car-details .add-favour i {
+  color: var(--first-color);
+  font-size: 1.5rem;
+  font-weight: normal;
+}
+.car-details .send-report h5,
+.car-details .send-report i {
+  color: var(--second-color);
+  font-size: 1.5rem;
+}
+.car-details .send-report h5 {
+  font-weight: normal;
+}
+.car-detail-aside h1 {
+  color: var(--first-color);
+  background: var(--text-white);
+  border-radius: 25px;
+  padding: 16px 0;
+  box-shadow: 1px 1px 0.2rem 0.1rem rgba(0, 0, 0, 0.1);
+  margin-bottom: 3rem;
+}
+.car-detail-aside .car-btn a {
+  color: var(--text-white);
+  padding: 10px 0;
+  border-radius: 25px;
+  font-size: 1.5rem;
+  margin: 15px 0;
+}
+.car-detail-aside .car-btn a:first-child {
+  background: var(--first-color);
+}
+
+.car-detail-aside .car-btn a:last-child {
+  background: var(--second-color);
+}
+.car-detail-aside .seller {
+  background: #fff;
+  margin-top: 4rem;
+  padding: 20px 0 10px;
+  border-radius: 15px;
+}
+.car-detail-aside .seller i {
+  font-size: 2.5rem;
+  padding: 10px 0 0 10px;
+}
+.car-detail-aside .seller .seller-name {
+  color: var(--first-color);
+}
+.car-detail-aside .seller a {
+  display: block;
+  color: #111;
+}
+.car-details .car-info span {
+  display: flex;
+  background: var(--text-white);
+  padding: 15px 15px 15px 0;
+  margin: 25px 0;
+  border-radius: 30px;
+  font-size: 1.2rem;
+}
+.car-details .car-info h3 {
+  color: var(--first-color);
+  font-weight: 600;
+}
+.car-details .car-info form textarea {
+  width: 100%;
+  border-radius: 20px;
+  padding: 10px 20px;
+}
+.car-details .car-info .details,
+.car-details .car-info form textarea {
+  box-shadow: 1px 1px 0.2rem 0.1rem rgba(0, 0, 0, 0.1) !important;
+}
+.car-details .car-info form .btn-send button {
+  border-radius: 32px;
+  width: 250px;
+  color: var(--text-white);
+  font-size: 1.4rem;
+  padding: 15px 0;
+  font-weight: 600;
+  box-shadow: 1px 5px 0.6rem 0.2rem rgba(0, 0, 0, 0.1) !important;
+  background: linear-gradient(
+    to bottom,
+    var(--first-color),
+    var(--second-color)
+  );
+}
+.car-details .warn {
+  background: #646464;
+  color: var(--text-white);
+  padding: 20px 10px;
+  border-radius: 15px;
+}
+.car-details .warn ul {
+  padding-inline-start: 0;
+}
+.car-details .warn ul li {
+  position: relative;
+  margin-bottom: 18px;
+}
+
+.car-details .warn ul li::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  background: var(--second-color);
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+.car-details .warn ul li span {
+  display: inline-block;
+  padding-right: 0.9rem;
+}
+/*********************car details page**********************/
+
+/*********************add car page**********************/
+.add-car {
+  background: #f5f5f5;
+}
+.add-car form {
+  background: #ececec;
+  box-shadow: 0.2rem 0.2rem 0.5rem rgba(0, 0, 0, 0.3);
+  border-radius: 0.5rem;
+}
+.add-car h3 {
+  color: var(--second-color);
+}
+
+.add-car .select-content i {
+  position: absolute;
+  top: 60%;
+  left: 2rem;
+  font-size: 1.7rem;
+  color: var(--second-color);
+}
+.add-car .form-btn .form-send {
+  color: var(--text-white);
+  background: linear-gradient(180deg, var(--first-color), var(--second-color));
+  padding: 0.5rem 4rem;
+  border-radius: 2rem;
+  font-size: 1.2rem;
+}
+.add-some-details h3 {
+  color: var(--second-color);
+  text-align: start;
+  margin-right: 15px;
+}
+.add-some-details .content-check {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-items: center;
+  margin: 1rem 0;
+  padding: 0;
+}
+.add-some-details .content-check .form-check {
+  width: 90%;
+  padding: 0;
+  user-select: none;
+}
+.add-some-details .content-check .form-check input {
+  display: none;
+}
+.add-some-details .content-check .form-check input {
+  display: none;
+}
+.add-some-details .content-check .form-check label {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  font-size: 1rem;
+  margin: 0.5rem 0.3rem;
+  cursor: pointer;
+}
+
+.form-check label .checkmark {
+  display: flex;
+  position: relative;
+  height: 1.5rem;
+  width: 1.5rem;
+  background: rgba(255, 138, 92, 0.6);
+  margin-right: 0.2rem;
+  cursor: pointer;
+}
+.form-check:hover input ~ label .checkmark {
+  background: var(--second-color);
+}
+
+.form-check input:checked ~ label .checkmark {
+  background: var(--second-color);
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.form-check input:checked ~ label .checkmark:after {
+  display: block;
+}
+.form-check input:checked ~ label .checkmark:after {
+  display: block;
+}
+.form-check .checkmark:after {
+  left: 0.56rem;
+  top: 0.19rem;
+  width: 0.5rem;
+  height: 0.875rem;
+  border: solid var(--text-white);
+  border-width: 0 0.187rem 0.187rem 0;
+  transform: rotate(45deg);
+}
+.add-car .form-control {
+  color: var(--second-color);
+}
+
+/*********************add car page**********************/
